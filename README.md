@@ -1,6 +1,6 @@
 # GitHub Actions for NPM with Chrome
 
-This action it for those running npm with support for react-snap which requires chrome browser to pre render pages.
+This action it for those running npm with support for react-snap.
 
 #### Example
 

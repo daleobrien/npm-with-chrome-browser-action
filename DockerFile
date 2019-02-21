@@ -5,8 +5,8 @@ LABEL repository="https://github.com/daleobrien/npm-with-chrome-browser-action"
 LABEL homepage="https://github.com/daleobrien/npm-with-chrome-browser-action"
 LABEL maintainer="Dale O'Brien <daleobrien@github.com>"
 
-LABEL com.github.actions.name="GitHub Action for NPM"
-LABEL com.github.actions.description="Run with npm with access to a Chrome"
+LABEL com.github.actions.name="GitHub Action for NPM/Chrome"
+LABEL com.github.actions.description="LTS npm with access to Chrome for use with react-snap"
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
