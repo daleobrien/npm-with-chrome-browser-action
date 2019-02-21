@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  test:
+    container_name: test
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    volumes:
+      - ./test_app:/github/workspace
+    command: --version && cd /github/workspace && npm install && npm run build
