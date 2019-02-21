@@ -19,9 +19,9 @@ RUN apk update && apk upgrade && \
       nss@edge
 
 # Tell Puppeteer to skip installing Chrome. We'll be using the installed package.
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+#ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 # Puppeteer v0.11.0 works with Chromium 63.
-RUN yarn add puppeteer@0.11.0
+RUN yarn add puppeteer@1.12.2
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
