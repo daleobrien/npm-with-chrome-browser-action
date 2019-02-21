@@ -18,6 +18,9 @@ RUN apk update && apk upgrade && \
       chromium@edge \
       nss@edge
 
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+RUN yarn add puppeteer@1.12.2
+
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
 
