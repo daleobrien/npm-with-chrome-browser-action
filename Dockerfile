@@ -16,12 +16,12 @@ RUN apk update && apk upgrade && \
     echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
     apk add --no-cache \
       chromium@edge \
-      nss@edge
+      nss@edge \
+      harfbuzz@edge
 
 # Tell Puppeteer to skip installing Chrome. We'll be using the installed package.
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV PUPPETEER_EXECUTABLE_PATH /usr/bin
-# Puppeteer v0.11.0 works with Chromium 63.
 RUN yarn add puppeteer@1.12.2
 
 COPY LICENSE README.md /

@@ -17,6 +17,15 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--disable-setuid-sandbox",
+      "--no-sandbox"
+    ],
+    "concurrency": 1,
+    "inlineCss": false,
+    "puppeteerExecutablePath": "/usr/bin/chromium-browser"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
